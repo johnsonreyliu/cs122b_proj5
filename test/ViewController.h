@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UILabel *seconds;
+    NSTimer *timer;
+    
+    int MainInt;
+    
+}
+-(IBAction)start:(id)sender;
+-(void)countup;
 
 @property (weak, nonatomic) IBOutlet UILabel *timer;
 

@@ -10,6 +10,18 @@
 #import "ViewController.h"
 
 @implementation ViewController
+
+-(void)countup {
+    MainInt += 1;
+    seconds.text = [NSString stringWithFormat:@"%i", MainInt];
+}
+
+-(IBAction)start:(id)sender {
+    MainInt = 0;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countup) userInfo:nil repeats:YES];
+}
+
+
 @synthesize timer = _timer;
 
 - (void)didReceiveMemoryWarning
