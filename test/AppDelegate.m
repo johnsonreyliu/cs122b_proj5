@@ -15,8 +15,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    return YES;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"questions" ofType:@"txt"];
+    NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSArray *rows = [content componentsSeparatedByString:@"\n"];
+    
+    //NSMutableArray *buildings = [NSMutableArray array];
+    for (NSString *row in rows)
+    {
+        //latitude,longitude    buildingNumber  BuildingName    [abbreviation]
+        NSArray *elements = [row componentsSeparatedByString:@"\t"];
+//        if (elements.count > 2)
+//        {
+//            NSArray *coordinatesArray = [[elements objectAtIndex:0] componentsSeparatedByString:@","];
+//            if (coordinatesArray.count != 2) continue;
+//            
+//            CLLocationCoordinate2D coordinate;
+//            coordinate.latitude = [[coordinatesArray objectAtIndex:0] doubleValue];
+//            coordinate.longitude = [[coordinatesArray objectAtIndex:1] doubleValue];
+//            
+//            NSString *abbreviation = nil;
+//            if (elements.count > 3) abbreviation = [elements objectAtIndex:3];
+//            
+//            NSString *name = [elements objectAtIndex:2];
+//            
+//            Building *building = [[Building alloc] initWithName:name abbreviation:abbreviation  coordinate:coordinate];
+//            
+//            [buildings addObject:building];
+//            
+//            
+//        }
+    }
+//    return YES;
 }
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

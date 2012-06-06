@@ -10,10 +10,14 @@
 
 @interface ViewController : UIViewController
 {
+    //these variables are for the timer
     IBOutlet UILabel *seconds;
     NSTimer *timer;
-    
     int MainInt;
+    
+    //these are for the picker
+    IBOutlet UIPickerView *pickerView;
+    NSMutableArray *arrayColors;
     
 }
 -(IBAction)start:(id)sender;
