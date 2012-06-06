@@ -6,9 +6,11 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+//test test test git
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize timer = _timer;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +28,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTimer:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
