@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		188D43BC157F2C8E00414E6E /* questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 188D43BB157F2C8E00414E6E /* questions.txt */; };
-		188D43C0157F343F00414E6E /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D43BF157F343F00414E6E /* PickerViewController.m */; };
 		18E003BD157F471A00E1DAAF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E003BC157F471A00E1DAAF /* View.xib */; };
 		FE4FFF0F157C4CAC00B707B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4FFF0E157C4CAC00B707B0 /* UIKit.framework */; };
 		FE4FFF11157C4CAC00B707B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4FFF10157C4CAC00B707B0 /* Foundation.framework */; };
@@ -38,8 +37,6 @@
 
 /* Begin PBXFileReference section */
 		188D43BB157F2C8E00414E6E /* questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questions.txt; sourceTree = "<group>"; };
-		188D43BE157F343F00414E6E /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
-		188D43BF157F343F00414E6E /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		18E003BC157F471A00E1DAAF /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		FE4FFF0A157C4CAC00B707B0 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4FFF0E157C4CAC00B707B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -128,8 +125,6 @@
 				FE4FFF26157C4CAD00B707B0 /* ViewController.h */,
 				FE4FFF27157C4CAD00B707B0 /* ViewController.m */,
 				FE4FFF15157C4CAD00B707B0 /* Supporting Files */,
-				188D43BE157F343F00414E6E /* PickerViewController.h */,
-				188D43BF157F343F00414E6E /* PickerViewController.m */,
 				18E003BC157F471A00E1DAAF /* View.xib */,
 			);
 			path = test;
@@ -277,7 +272,6 @@
 				FE4FFF1B157C4CAD00B707B0 /* main.m in Sources */,
 				FE4FFF1F157C4CAD00B707B0 /* AppDelegate.m in Sources */,
 				FE4FFF28157C4CAD00B707B0 /* ViewController.m in Sources */,
-				188D43C0157F343F00414E6E /* PickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

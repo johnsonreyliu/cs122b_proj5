@@ -25,6 +25,44 @@
 
 @synthesize timer = _timer;
 
+/////////////////////////////picker view
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView{
+    return 1;
+    //return 3 for 3 components, etc...
+}
+
+- (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component{
+    return [list count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    return [list objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+    NSLog(@"selected item: %@ index of selected item %i", [list objectAtIndex:row], row);
+}
+
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+    
+    list = [[NSMutableArray alloc] init];
+    [list addObject:@"Light bulb"];
+    [list addObject:@"orange"];
+    
+    
+}
+
+
+
+//////////////////
+
+
+
 
 
 - (void)didReceiveMemoryWarning
@@ -35,11 +73,11 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+//- (void)viewDidLoad
+//{
+//    [super viewDidLoad];
+//	// Do any additional setup after loading the view, typically from a nib.
+//}
 
 - (void)viewDidUnload
 {

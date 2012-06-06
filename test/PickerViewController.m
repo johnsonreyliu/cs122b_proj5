@@ -13,6 +13,7 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView{
     return 1;
+    //return 3 for 3 components, etc...
 }
 
 - (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component{
@@ -37,6 +38,8 @@ NSLog(@"selected item: %@ index of selected item %i", [list objectAtIndex:row], 
 list = [[NSMutableArray alloc] init];
 [list addObject:@"Light bulb"];
 [list addObject:@"orange"];
+    
+
 }
 
 

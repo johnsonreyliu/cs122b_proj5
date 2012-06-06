@@ -17,7 +17,7 @@
     
     //these are for the picker
     IBOutlet UIPickerView *pickerView;
-    NSMutableArray *arrayColors;
+    NSMutableArray *list;
     
 }
 -(IBAction)start:(id)sender;

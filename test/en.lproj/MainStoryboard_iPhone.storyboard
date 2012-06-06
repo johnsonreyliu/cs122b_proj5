@@ -45,11 +45,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <pickerView contentMode="scaleToFill" id="oRo-ej-kxD">
-                                <rect key="frame" x="0.0" y="202" width="320" height="216"/>
+                            <pickerView contentMode="scaleToFill" id="ssq-la-aQM">
+                                <rect key="frame" x="0.0" y="244" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="UbF-cJ-lfw" id="jRZ-Kp-VTM"/>
+                                    <outlet property="dataSource" destination="2" id="tgk-j7-bad"/>
+                                    <outlet property="delegate" destination="2" id="tiF-rN-ePo"/>
                                 </connections>
                             </pickerView>
                         </subviews>
