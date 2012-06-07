@@ -10,9 +10,7 @@
 
 @interface ViewController : UIViewController
 {
-    
-    
-    __weak IBOutlet UILabel *questionLabel;
+    IBOutlet UILabel *questionLabel;
     
     //these variables are for the timer
     IBOutlet UILabel *seconds;
@@ -29,6 +27,8 @@
 }
 -(IBAction)start:(id)sender;
 -(void)countup;
+
+-(IBAction)insert:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *timer;
 

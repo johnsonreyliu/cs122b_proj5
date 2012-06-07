@@ -6,19 +6,19 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-//test test test git
 #import "ViewController.h"
 
 @implementation ViewController
+
+
+
+
 
 //timer
 -(void)countup {
     MainInt += 1;
     seconds.text = [NSString stringWithFormat:@"%i", MainInt];
 }
-
-
-
 
 
 //timer
@@ -28,6 +28,7 @@
 }
 
 @synthesize timer = _timer;
+//@synthesize questionLabel;
 
 /////////////////////////////picker view
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView{
