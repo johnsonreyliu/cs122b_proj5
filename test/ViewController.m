@@ -55,11 +55,14 @@
     [list addObject:@"orange"];
     
     
+    questionLabel.text=@"test question";
+    
+    
+    
 }
 
+//////////////////text view
 
-
-//////////////////
 
 
 
@@ -82,6 +85,7 @@
 - (void)viewDidUnload
 {
     [self setTimer:nil];
+    questionLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

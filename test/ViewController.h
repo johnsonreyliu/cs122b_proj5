@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 {
+    
+    
+    __weak IBOutlet UILabel *questionLabel;
+    
     //these variables are for the timer
     IBOutlet UILabel *seconds;
     NSTimer *timer;
@@ -18,6 +22,9 @@
     //these are for the picker
     IBOutlet UIPickerView *pickerView;
     NSMutableArray *list;
+    
+//    //this is for textview
+//    IBOutlet UITextView *textView;
     
 }
 -(IBAction)start:(id)sender;
