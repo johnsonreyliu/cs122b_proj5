@@ -25,6 +25,8 @@
     {
         //latitude,longitude    buildingNumber  BuildingName    [abbreviation]
         NSArray *elements = [row componentsSeparatedByString:@"\t"];
+        NSString *question = [elements objectAtIndex:0];
+        
 //        if (elements.count > 2)
 //        {
 //            NSArray *coordinatesArray = [[elements objectAtIndex:0] componentsSeparatedByString:@","];

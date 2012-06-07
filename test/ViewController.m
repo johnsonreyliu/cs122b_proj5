@@ -17,6 +17,10 @@
     seconds.text = [NSString stringWithFormat:@"%i", MainInt];
 }
 
+
+
+
+
 //timer
 -(IBAction)start:(id)sender {
     MainInt = 0;
