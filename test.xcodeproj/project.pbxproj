@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1818458615802E2D007F6BFF /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 1818458515802E2D007F6BFF /* question.m */; };
 		187FF11C15807A470003E8B4 /* moviedb_final in Resources */ = {isa = PBXBuildFile; fileRef = 187FF11B15807A470003E8B4 /* moviedb_final */; };
+		187FF12415807EC50003E8B4 /* QuestionDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 187FF12315807EC50003E8B4 /* QuestionDatabase.m */; };
+		187FF1281580803E0003E8B4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 187FF1261580803E0003E8B4 /* libsqlite3.0.dylib */; };
+		187FF1291580803E0003E8B4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 187FF1271580803E0003E8B4 /* libsqlite3.dylib */; };
 		188D43BC157F2C8E00414E6E /* questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 188D43BB157F2C8E00414E6E /* questions.txt */; };
 		FE4FFF0F157C4CAC00B707B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4FFF0E157C4CAC00B707B0 /* UIKit.framework */; };
 		FE4FFF11157C4CAC00B707B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4FFF10157C4CAC00B707B0 /* Foundation.framework */; };
@@ -40,6 +43,10 @@
 		1818458415802E2D007F6BFF /* question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = question.h; sourceTree = "<group>"; };
 		1818458515802E2D007F6BFF /* question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = question.m; sourceTree = "<group>"; };
 		187FF11B15807A470003E8B4 /* moviedb_final */ = {isa = PBXFileReference; lastKnownFileType = file; path = moviedb_final; sourceTree = "<group>"; };
+		187FF12215807EC50003E8B4 /* QuestionDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDatabase.h; sourceTree = "<group>"; };
+		187FF12315807EC50003E8B4 /* QuestionDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDatabase.m; sourceTree = "<group>"; };
+		187FF1261580803E0003E8B4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		187FF1271580803E0003E8B4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		188D43BB157F2C8E00414E6E /* questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questions.txt; sourceTree = "<group>"; };
 		FE4FFF0A157C4CAC00B707B0 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4FFF0E157C4CAC00B707B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187FF1281580803E0003E8B4 /* libsqlite3.0.dylib in Frameworks */,
+				187FF1291580803E0003E8B4 /* libsqlite3.dylib in Frameworks */,
 				FE4FFF0F157C4CAC00B707B0 /* UIKit.framework in Frameworks */,
 				FE4FFF11157C4CAC00B707B0 /* Foundation.framework in Frameworks */,
 				FE4FFF13157C4CAD00B707B0 /* CoreGraphics.framework in Frameworks */,
@@ -90,6 +99,8 @@
 		FE4FFEFF157C4CAC00B707B0 = {
 			isa = PBXGroup;
 			children = (
+				187FF1261580803E0003E8B4 /* libsqlite3.0.dylib */,
+				187FF1271580803E0003E8B4 /* libsqlite3.dylib */,
 				FE4FFF14157C4CAD00B707B0 /* test */,
 				FE4FFF35157C4CAD00B707B0 /* testTests */,
 				FE4FFF0D157C4CAC00B707B0 /* Frameworks */,
@@ -124,6 +135,8 @@
 				1818458515802E2D007F6BFF /* question.m */,
 				188D43BB157F2C8E00414E6E /* questions.txt */,
 				FE4FFF1D157C4CAD00B707B0 /* AppDelegate.h */,
+				187FF12215807EC50003E8B4 /* QuestionDatabase.h */,
+				187FF12315807EC50003E8B4 /* QuestionDatabase.m */,
 				FE4FFF1E157C4CAD00B707B0 /* AppDelegate.m */,
 				FE4FFF20157C4CAD00B707B0 /* MainStoryboard_iPhone.storyboard */,
 				FE4FFF23157C4CAD00B707B0 /* MainStoryboard_iPad.storyboard */,
@@ -278,6 +291,7 @@
 				FE4FFF1F157C4CAD00B707B0 /* AppDelegate.m in Sources */,
 				FE4FFF28157C4CAD00B707B0 /* ViewController.m in Sources */,
 				1818458615802E2D007F6BFF /* question.m in Sources */,
+				187FF12415807EC50003E8B4 /* QuestionDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
